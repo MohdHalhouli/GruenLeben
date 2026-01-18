@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrünLeben - Fragebogen</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="phone-frame">
+        <div class="screen">
+            <div class="status-bar light">
+                <span>9:41</span>
+                <div class="status-icons">
+                    <span>📶</span>
+                    <span>🔋</span>
+                </div>
+            </div>
+            
+            <div class="screen-content" style="padding-top: 60px;">
+                
+                <!-- Back Button -->
+                <a href="onboarding-gps.html" style="position: absolute; top: 50px; left: 24px; font-size: 24px; text-decoration: none;">
+                    ←
+                </a>
+                
+                <!-- Question Header -->
+                <div class="question-header">
+                    <span class="question-number">Frage 1 von 3</span>
+                    <h2>Wie bewegst du dich hauptsächlich fort?</h2>
+                    <div class="question-progress">
+                        <div class="question-progress-fill" style="width: 33%;"></div>
+                    </div>
+                </div>
+                
+                <!-- Image -->
+                <div style="border-radius: 16px; overflow: hidden; margin-bottom: 24px;">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=150&fit=crop" 
+                         alt="Mobilität" 
+                         style="width: 100%; height: 120px; object-fit: cover;">
+                </div>
+                
+                <!-- Options -->
+                <div class="radio-group">
+                    <label class="radio-option selected">
+                        <div class="radio-circle"></div>
+                        <div style="flex: 1;">
+                            <strong>🚗 Auto</strong>
+                            <p class="text-sm text-gray">Ich fahre meistens mit dem Auto</p>
+                        </div>
+                    </label>
+                    
+                    <label class="radio-option">
+                        <div class="radio-circle"></div>
+                        <div style="flex: 1;">
+                            <strong>🚌 ÖPNV</strong>
+                            <p class="text-sm text-gray">Bus, Bahn und öffentliche Verkehrsmittel</p>
+                        </div>
+                    </label>
+                    
+                    <label class="radio-option">
+                        <div class="radio-circle"></div>
+                        <div style="flex: 1;">
+                            <strong>🚴 Fahrrad</strong>
+                            <p class="text-sm text-gray">Ich fahre viel Fahrrad oder E-Bike</p>
+                        </div>
+                    </label>
+                    
+                    <label class="radio-option">
+                        <div class="radio-circle"></div>
+                        <div style="flex: 1;">
+                            <strong>🚶 Zu Fuß</strong>
+                            <p class="text-sm text-gray">Ich gehe meistens zu Fuß</p>
+                        </div>
+                    </label>
+                </div>
+                
+                <!-- Info Box -->
+                <div class="card card-sm mt-lg" style="background: var(--primary-bg); border: 1px solid var(--primary);">
+                    <div class="flex items-center gap-sm">
+                        <span>💡</span>
+                        <p class="text-sm">Diese Info hilft uns, dir passende Mobilitäts-Challenges vorzuschlagen!</p>
+                    </div>
+                </div>
+                
+                <!-- Actions -->
+                <div style="margin-top: 32px; padding-bottom: 40px;">
+                    <a href="onboarding-fragebogen-2.html" class="btn btn-primary">
+                        Weiter
+                    </a>
+                    
+                    <div class="progress-dots mt-lg">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

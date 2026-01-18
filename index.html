@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrünLeben App - Prototyp Übersicht</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body style="flex-direction: column; align-items: center;">
+    
+    <div class="gallery-container">
+        <!-- Header -->
+        <div class="gallery-header">
+            <div class="app-logo" style="margin-bottom: 24px;">
+                <div class="logo-icon">🌱</div>
+            </div>
+            <h1>GrünLeben</h1>
+            <p>Dein persönlicher Nachhaltigkeits-Begleiter</p>
+        </div>
+
+        <!-- App Flow Diagram -->
+        <div class="flow-container">
+            <h2 style="color: white; margin-bottom: 24px; text-align: center;">📱 App Screen-Flow</h2>
+            <div class="flow-diagram">
+                <a href="screens/onboarding-welcome.html" class="flow-item">
+                    <span class="flow-icon">👋</span>
+                    <span class="flow-label">Willkommen</span>
+                </a>
+                <span class="flow-arrow">→</span>
+                <a href="screens/onboarding-intro.html" class="flow-item">
+                    <span class="flow-icon">🌱</span>
+                    <span class="flow-label">Grüni-Intro</span>
+                </a>
+                <span class="flow-arrow">→</span>
+                <a href="screens/onboarding-profil.html" class="flow-item">
+                    <span class="flow-icon">👤</span>
+                    <span class="flow-label">Profil</span>
+                </a>
+                <span class="flow-arrow">→</span>
+                <a href="screens/onboarding-gps.html" class="flow-item">
+                    <span class="flow-icon">📍</span>
+                    <span class="flow-label">Standort</span>
+                </a>
+                <span class="flow-arrow">→</span>
+                <a href="screens/onboarding-fragebogen.html" class="flow-item">
+                    <span class="flow-icon">📋</span>
+                    <span class="flow-label">Fragebogen</span>
+                </a>
+                <span class="flow-arrow">→</span>
+                <a href="screens/home.html" class="flow-item" style="background: var(--primary-bg); border: 2px solid var(--primary);">
+                    <span class="flow-icon">🏠</span>
+                    <span class="flow-label">Home</span>
+                </a>
+            </div>
+            
+            <div style="display: flex; justify-content: center; margin-top: 32px;">
+                <div class="flow-diagram">
+                    <a href="screens/scanner.html" class="flow-item">
+                        <span class="flow-icon">📷</span>
+                        <span class="flow-label">Scanner</span>
+                    </a>
+                    <span class="flow-arrow">↔</span>
+                    <a href="screens/home.html" class="flow-item" style="background: var(--primary-bg);">
+                        <span class="flow-icon">🏠</span>
+                        <span class="flow-label">Home</span>
+                    </a>
+                    <span class="flow-arrow">↔</span>
+                    <a href="screens/locations.html" class="flow-item">
+                        <span class="flow-icon">📍</span>
+                        <span class="flow-label">Orte</span>
+                    </a>
+                    <span class="flow-arrow">↔</span>
+                    <a href="screens/community.html" class="flow-item">
+                        <span class="flow-icon">👥</span>
+                        <span class="flow-label">Community</span>
+                    </a>
+                    <span class="flow-arrow">↔</span>
+                    <a href="screens/einstellungen.html" class="flow-item">
+                        <span class="flow-icon">⚙️</span>
+                        <span class="flow-label">Profil</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Onboarding Section -->
+        <section class="gallery-section">
+            <h2>🚀 Onboarding</h2>
+            <div class="gallery-grid">
+                <a href="screens/onboarding-welcome.html" class="gallery-item">
+                    <div class="gallery-preview" style="background: linear-gradient(135deg, #22C55E, #16A34A);">
+                        <span style="color: white;">🌱</span>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Willkommen</h3>
+                        <p>Splash-Screen mit App-Logo und Einführungstext</p>
+                    </div>
+                </a>
+                
+                <a href="screens/onboarding-intro.html" class="gallery-item">
+                    <div class="gallery-preview" style="background: linear-gradient(135deg, #10B981, #059669);">
+                        <span style="color: white;">💬</span>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Grüni-Einführung</h3>
+                        <p>Chatbot erklärt CO2 und App-Funktionen</p>
+                    </div>
+                </a>
+                
+                <a href="screens/onboarding-profil.html" class="gallery-item">
+                    <div class="gallery-preview" style="background: linear-gradient(135deg, #8B5CF6, #7C3AED);">
+                        <span style="color: white;">👤</span>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Profil erstellen</h3>
+                        <p>Avatar, Name und Einschränkungen angeben</p>
+                    </div>
+                </a>
+                
+                <a href="screens/onboarding-gps.html" class="gallery-item">
+                    <div class="gallery-preview" style="background: linear-gradient(135deg, #3B82F6, #2563EB);">
+                        <span style="color: white;">📍</span>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Standort-Erlaubnis</h3>
+                        <p>GPS-Berechtigung für lokale Empfehlungen</p>
+                    </div>
+                </a>
+                
+                <a href="screens/onboarding-fragebogen.html" class="gallery-item">
+                    <div class="gallery-preview" style="background: linear-gradient(135deg, #F97316, #EA580C);">
+                        <span style="color: white;">📋</span>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>CO2-Fragebogen</h3>
+                        <p>Personalisierung basierend auf Gewohnheiten</p>
+                    </div>
+                </a>
+                
+                <a href="screens/onboarding-fertig.html" class="gallery-item">
+                    <div class="gallery-preview" style="background: linear-gradient(135deg, #22C55E, #84CC16);">
+                        <span style="color: white;">✅</span>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Setup Abgeschlossen</h3>
+                        <p>Bestätigung und personalisierter Start</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Main Screens Section -->
+        <section class="gallery-section">
+            <h2>🏠 Hauptbildschirme</h2>
+            <div class="gallery-grid">
+                <a href="screens/home.html" class="gallery-item">
+                    <div class="gallery-preview" style="background: linear-gradient(135deg, #F0FDF4, #DCFCE7);">
+                        <span>📊</span>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Home Dashboard</h3>
+                        <p>Fortschrittsanzeige und personalisierte Challenges</p>
+                    </div>
+                </a>
+                
+                <a href="screens/scanner.html" class="gallery-item">
+                    <div class="gallery-preview" style="background: linear-gradient(135deg, #1F2937, #374151);">
+                        <span style="color: white;">📷</span>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Barcode Scanner</h3>
+                        <p>Produkte scannen und Nachhaltigkeit prüfen</p>
+                    </div>
+                </a>
+                
+                <a href="screens/scanner-ergebnis.html" class="gallery-item">
+                    <div class="gallery-preview" style="background: linear-gradient(135deg, #FEF3C7, #FDE68A);">
+                        <span>🏷️</span>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Scan-Ergebnis</h3>
+                        <p>Nachhaltigkeitsbewertung und Alternativen</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Community Section -->
+        <section class="gallery-section">
+            <h2>👥 Gemeinschaft</h2>
+            <div class="gallery-grid">
+                <a href="screens/community.html" class="gallery-item">
+                    <div class="gallery-preview" style="background: linear-gradient(135deg, #EDE9FE, #DDD6FE);">
+                        <span>💬</span>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Community Feed</h3>
+                        <p>Aktivitäten von Freunden und Nachbarn</p>
+                    </div>
+                </a>
+                
+                <a href="screens/locations.html" class="gallery-item">
+                    <div class="gallery-preview" style="background: linear-gradient(135deg, #DCFCE7, #BBF7D0);">
+                        <span>📍</span>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Nachhaltige Orte</h3>
+                        <p>Restaurants & Shops mit Community-Kommentaren</p>
+                    </div>
+                </a>
+                
+                <a href="screens/bestenliste.html" class="gallery-item">
+                    <div class="gallery-preview" style="background: linear-gradient(135deg, #FEF9C3, #FEF08A);">
+                        <span>🏆</span>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Bestenliste</h3>
+                        <p>Rankings unter Freunden und weltweit</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="gallery-section">
+            <h2>🛠️ Services & Marktplatz</h2>
+            <div class="gallery-grid">
+                <a href="screens/reparatur.html" class="gallery-item">
+                    <div class="gallery-preview" style="background: linear-gradient(135deg, #DBEAFE, #BFDBFE);">
+                        <span>🔧</span>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Reparaturdienste</h3>
+                        <p>Lokale Werkstätten und Reparatur-Cafés</p>
+                    </div>
+                </a>
+                
+                <a href="screens/tauschboerse.html" class="gallery-item">
+                    <div class="gallery-preview" style="background: linear-gradient(135deg, #FCE7F3, #FBCFE8);">
+                        <span>♻️</span>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Tauschbörse</h3>
+                        <p>Secondhand-Marktplatz in der Nachbarschaft</p>
+                    </div>
+                </a>
+                
+                <a href="screens/mobilitaet.html" class="gallery-item">
+                    <div class="gallery-preview" style="background: linear-gradient(135deg, #CCFBF1, #99F6E4);">
+                        <span>🚌</span>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Mobilität</h3>
+                        <p>ÖPNV-Anbindung und CO2-Vergleich</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Settings Section -->
+        <section class="gallery-section">
+            <h2>⚙️ Einstellungen</h2>
+            <div class="gallery-grid">
+                <a href="screens/einstellungen.html" class="gallery-item">
+                    <div class="gallery-preview" style="background: linear-gradient(135deg, #F3F4F6, #E5E7EB);">
+                        <span>👤</span>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Profil & Einstellungen</h3>
+                        <p>Benachrichtigungen, Barrierefreiheit, Datenschutz</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- App Features Overview -->
+        <section class="gallery-section">
+            <h2>✨ App-Features</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 16px;">
+                <div class="card" style="background: var(--primary-bg);">
+                    <h4>📊 Fortschrittsverfolgung</h4>
+                    <p class="text-sm mt-sm">Tägliche, wöchentliche und monatliche CO2-Einsparungen visualisiert</p>
+                </div>
+                <div class="card" style="background: var(--primary-bg);">
+                    <h4>� Badges & Erfolge</h4>
+                    <p class="text-sm mt-sm">Sammle Auszeichnungen für deine nachhaltigen Aktivitäten</p>
+                </div>
+                <div class="card" style="background: var(--primary-bg);">
+                    <h4>💧⚡ Wasser & Energie</h4>
+                    <p class="text-sm mt-sm">Tracke auch deinen Wasser- und Energieverbrauch</p>
+                </div>
+                <div class="card" style="background: var(--primary-bg);">
+                    <h4>🌱 Grüni Chatbot</h4>
+                    <p class="text-sm mt-sm">Dein persönlicher Nachhaltigkeits-Assistent erklärt alles</p>
+                </div>
+                <div class="card" style="background: var(--primary-bg);">
+                    <h4>📷 Barcode-Scanner</h4>
+                    <p class="text-sm mt-sm">Nachhaltigkeitsbewertung von A-E mit Alternativen</p>
+                </div>
+                <div class="card" style="background: var(--primary-bg);">
+                    <h4>📍 Nachhaltige Orte</h4>
+                    <p class="text-sm mt-sm">Finde grüne Restaurants und Shops mit Community-Tipps</p>
+                </div>
+                <div class="card" style="background: var(--primary-bg);">
+                    <h4>🔧 Reparatur-Services</h4>
+                    <p class="text-sm mt-sm">Finde lokale Reparatur-Cafés und Werkstätten</p>
+                </div>
+                <div class="card" style="background: var(--primary-bg);">
+                    <h4>🚌 Mobilitätsvorschläge</h4>
+                    <p class="text-sm mt-sm">Beste ÖPNV-Anbindung mit CO2-Vergleich</p>
+                </div>
+                <div class="card" style="background: var(--primary-bg);">
+                    <h4>📴 Offline-Aufzeichnung</h4>
+                    <p class="text-sm mt-sm">Routen werden auch ohne Internet gespeichert</p>
+                </div>
+                <div class="card" style="background: var(--primary-bg);">
+                    <h4>♿ Barrierefreiheit</h4>
+                    <p class="text-sm mt-sm">Text-to-Speech, Farbschemata, rollstuhlgerechte Filter</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer style="text-align: center; padding: 48px 0; color: var(--gray-500);">
+            <p>GrünLeben App Prototyp - Erstellt für nachhaltigeres Leben</p>
+            <p class="text-sm mt-sm">Klicken Sie auf die Screens oben, um den Prototypen zu erkunden</p>
+        </footer>
+    </div>
+
+</body>
+</html>

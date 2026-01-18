@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrünLeben - Standort</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="phone-frame">
+        <div class="screen">
+            <div class="status-bar light">
+                <span>9:41</span>
+                <div class="status-icons">
+                    <span>📶</span>
+                    <span>🔋</span>
+                </div>
+            </div>
+            
+            <div class="onboarding-screen" style="overflow-y: auto;">
+                
+                <!-- Back Button -->
+                <a href="onboarding-profil.html" style="position: absolute; top: 50px; left: 24px; font-size: 24px; text-decoration: none;">
+                    ←
+                </a>
+                
+                <!-- Illustration -->
+                <div class="onboarding-illustration">
+                    <div style="text-align: center;">
+                        <div class="permission-icon" style="background: linear-gradient(135deg, #DBEAFE, #BFDBFE);">
+                            📍
+                        </div>
+                        
+                        <!-- Stylized Map Graphic -->
+                        <div class="map-placeholder" style="width: 280px; height: 180px; margin-top: 24px;">
+                            <div style="display: flex; gap: 30px;">
+                                <div class="map-marker"></div>
+                                <div class="map-marker" style="background: var(--secondary);"></div>
+                                <div class="map-marker" style="background: var(--accent);"></div>
+                            </div>
+                            <span class="map-text">Lokale Angebote in deiner Nähe</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Content -->
+                <div class="onboarding-content">
+                    <h1>Standort freigeben</h1>
+                    <p class="mt-md">
+                        Mit deinem Standort können wir dir lokale Reparaturdienste, 
+                        saisonale Produkte und die beste ÖPNV-Anbindung in deiner Nähe zeigen.
+                    </p>
+                    
+                    <div class="card card-sm mt-lg" style="text-align: left;">
+                        <div class="flex items-center gap-md mb-sm">
+                            <span style="font-size: 20px;">🔒</span>
+                            <span class="text-sm"><strong>Deine Daten sind sicher</strong></span>
+                        </div>
+                        <p class="text-sm text-gray">
+                            Dein Standort wird nur lokal verwendet und nie an Dritte weitergegeben.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Actions -->
+                <div class="onboarding-actions" style="padding-bottom: 40px;">
+                    <a href="onboarding-fragebogen.html" class="btn btn-primary">
+                        📍 Standort erlauben
+                    </a>
+                    <a href="onboarding-fragebogen.html" class="btn btn-ghost">
+                        Später entscheiden
+                    </a>
+                    
+                    <div class="progress-dots">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

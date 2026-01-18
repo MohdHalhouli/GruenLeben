@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrünLeben - Tauschbörse</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="phone-frame">
+        <div class="screen">
+            <div class="status-bar light">
+                <span>9:41</span>
+                <div class="status-icons">
+                    <span>📶</span>
+                    <span>🔋</span>
+                </div>
+            </div>
+            
+            <div class="screen-content">
+                
+                <!-- Header -->
+                <div class="header">
+                    <a href="reparatur.html" style="font-size: 24px; text-decoration: none;">←</a>
+                    <h2>Tauschbörse</h2>
+                    <a href="#" class="header-action">➕</a>
+                </div>
+                
+                <!-- Search Bar -->
+                <div style="position: relative; margin-bottom: 16px;">
+                    <input type="text" 
+                           placeholder="Suche nach Artikeln..." 
+                           class="form-input" 
+                           style="padding-left: 40px;">
+                    <span style="position: absolute; left: 12px; top: 50%; transform: translateY(-50%); font-size: 18px;">🔍</span>
+                </div>
+                
+                <!-- Category Filters -->
+                <div class="category-filters">
+                    <a href="#" class="category-filter active">Alle</a>
+                    <a href="#" class="category-filter">👕 Kleidung</a>
+                    <a href="#" class="category-filter">📚 Bücher</a>
+                    <a href="#" class="category-filter">🪴 Garten</a>
+                    <a href="#" class="category-filter">🏠 Haushalt</a>
+                    <a href="#" class="category-filter">🎮 Elektronik</a>
+                    <a href="#" class="category-filter">👶 Baby & Kind</a>
+                </div>
+                
+                <!-- Results Count -->
+                <div class="flex justify-between items-center mb-md">
+                    <span class="text-sm text-gray">24 Artikel in deiner Nähe</span>
+                    <a href="#" class="text-sm text-primary" style="text-decoration: none;">Sortieren ↓</a>
+                </div>
+                
+                <!-- Marketplace Grid -->
+                <div class="marketplace-grid">
+                    <a href="#" class="marketplace-item">
+                        <img src="https://images.unsplash.com/photo-1558171813-4c088753af8f?w=300&h=300&fit=crop" 
+                             alt="Fahrrad" class="marketplace-image">
+                        <div class="marketplace-content">
+                            <span class="marketplace-title">Damenfahrrad 28 Zoll</span>
+                            <p class="marketplace-distance">📍 0,5 km • Tausch</p>
+                            <span class="challenge-tag" style="margin-top: 4px;">🌱 -15 kg CO₂</span>
+                        </div>
+                    </a>
+                    
+                    <a href="#" class="marketplace-item">
+                        <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=300&h=300&fit=crop" 
+                             alt="Bücher" class="marketplace-image">
+                        <div class="marketplace-content">
+                            <span class="marketplace-title">Bücherpaket 10 Stück</span>
+                            <p class="marketplace-distance">📍 0,8 km • Zu verschenken</p>
+                            <span class="challenge-tag" style="margin-top: 4px;">🌱 -3 kg CO₂</span>
+                        </div>
+                    </a>
+                    
+                    <a href="#" class="marketplace-item">
+                        <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=300&h=300&fit=crop" 
+                             alt="Jacke" class="marketplace-image">
+                        <div class="marketplace-content">
+                            <span class="marketplace-title">Winterjacke Gr. M</span>
+                            <p class="marketplace-distance">📍 1,2 km • Tausch</p>
+                            <span class="challenge-tag" style="margin-top: 4px;">🌱 -20 kg CO₂</span>
+                        </div>
+                    </a>
+                    
+                    <a href="#" class="marketplace-item">
+                        <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=300&h=300&fit=crop" 
+                             alt="Pflanzen" class="marketplace-image">
+                        <div class="marketplace-content">
+                            <span class="marketplace-title">Zimmerpflanzen Set</span>
+                            <p class="marketplace-distance">📍 1,5 km • Zu verschenken</p>
+                            <span class="challenge-tag" style="margin-top: 4px;">🌱 -2 kg CO₂</span>
+                        </div>
+                    </a>
+                    
+                    <a href="#" class="marketplace-item">
+                        <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=300&h=300&fit=crop" 
+                             alt="Kinderspielzeug" class="marketplace-image">
+                        <div class="marketplace-content">
+                            <span class="marketplace-title">Holzspielzeug Set</span>
+                            <p class="marketplace-distance">📍 0,9 km • Tausch</p>
+                            <span class="challenge-tag" style="margin-top: 4px;">🌱 -5 kg CO₂</span>
+                        </div>
+                    </a>
+                    
+                    <a href="#" class="marketplace-item">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&h=300&fit=crop" 
+                             alt="Fahrradhelm" class="marketplace-image">
+                        <div class="marketplace-content">
+                            <span class="marketplace-title">Fahrradhelm neu</span>
+                            <p class="marketplace-distance">📍 2,1 km • 15€</p>
+                            <span class="challenge-tag" style="margin-top: 4px;">🌱 -8 kg CO₂</span>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Info Banner -->
+                <div class="card mt-lg" style="background: linear-gradient(135deg, #FCE7F3, #FBCFE8);">
+                    <div class="flex items-center gap-md">
+                        <span style="font-size: 32px;">♻️</span>
+                        <div>
+                            <strong style="color: #9D174D;">Artikel einstellen?</strong>
+                            <p class="text-sm" style="color: #BE185D;">Teile, tausche oder verschenke Dinge, die du nicht mehr brauchst!</p>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary btn-sm mt-md" style="background: #EC4899;">
+                        📸 Artikel einstellen
+                    </a>
+                </div>
+                
+                <!-- CO2 Impact Summary -->
+                <div class="card mt-lg" style="background: var(--primary-bg);">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="text-sm text-gray">Deine Tausch-Bilanz</p>
+                            <p style="font-size: 24px; font-weight: 700; color: var(--primary);">45 kg</p>
+                            <p class="text-xs text-gray">CO₂ eingespart durch Secondhand</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <span style="font-size: 40px;">🌍</span>
+                            <p class="text-xs text-gray">3 Bäume<br>gepflanzt</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="height: 100px;"></div>
+                
+            </div>
+            
+            <!-- Bottom Navigation -->
+            <nav class="bottom-nav">
+                <a href="home.html" class="nav-item">
+                    <svg class="nav-icon" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                    </svg>
+                    <span>Home</span>
+                </a>
+                <a href="reparatur.html" class="nav-item active">
+                    <svg class="nav-icon" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/>
+                    </svg>
+                    <span>Services</span>
+                </a>
+                <a href="scanner.html" class="nav-item scanner">
+                    <div class="nav-icon-wrapper">
+                        <svg class="nav-icon" fill="currentColor" viewBox="0 0 24 24" style="color: white;">
+                            <path d="M9.5 6.5v3h-3v-3h3M11 5H5v6h6V5zm-1.5 9.5v3h-3v-3h3M11 13H5v6h6v-6zm6.5-6.5v3h-3v-3h3M19 5h-6v6h6V5zm-6 8h1.5v1.5H13V13zm1.5 1.5H16V16h-1.5v-1.5zM16 13h1.5v1.5H16V13zm-3 3h1.5v1.5H13V16zm1.5 1.5H16V19h-1.5v-1.5zM16 16h1.5v1.5H16V16zm1.5-1.5H19V16h-1.5v-1.5zm0 3H19V19h-1.5v-1.5zM19 13h-1.5v1.5H19V13z"/>
+                        </svg>
+                    </div>
+                    <span>Scan</span>
+                </a>
+                <a href="community.html" class="nav-item">
+                    <svg class="nav-icon" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+                    </svg>
+                    <span>Community</span>
+                </a>
+                <a href="einstellungen.html" class="nav-item">
+                    <svg class="nav-icon" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                    </svg>
+                    <span>Profil</span>
+                </a>
+            </nav>
+            
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrünLeben - Einführung</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .chat-container {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            padding: 20px 0;
+        }
+        .chat-bubble {
+            max-width: 85%;
+            padding: 14px 18px;
+            border-radius: 20px;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+        .chat-bubble.bot {
+            background: var(--primary-bg);
+            border: 1px solid var(--primary-light);
+            align-self: flex-start;
+            border-bottom-left-radius: 6px;
+        }
+        .chat-bubble.user {
+            background: var(--primary);
+            color: white;
+            align-self: flex-end;
+            border-bottom-right-radius: 6px;
+        }
+        .bot-avatar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+        .bot-avatar-icon {
+            width: 36px;
+            height: 36px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+        .bot-avatar-name {
+            font-weight: 600;
+            color: var(--primary-dark);
+            font-size: 14px;
+        }
+        .quick-replies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 12px;
+        }
+        .quick-reply {
+            padding: 10px 16px;
+            background: white;
+            border: 2px solid var(--primary);
+            border-radius: 20px;
+            color: var(--primary);
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .quick-reply:hover {
+            background: var(--primary-bg);
+        }
+        .info-card {
+            background: linear-gradient(135deg, #EDE9FE, #DDD6FE);
+            border-radius: 16px;
+            padding: 16px;
+            margin: 12px 0;
+        }
+        .info-card h4 {
+            color: #7C3AED;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        .info-card p {
+            font-size: 13px;
+            color: #5B21B6;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="phone-frame">
+        <div class="screen">
+            <div class="status-bar light">
+                <span>9:41</span>
+                <div class="status-icons">
+                    <span>📶</span>
+                    <span>🔋</span>
+                </div>
+            </div>
+            
+            <div class="screen-content" style="padding-top: 50px;">
+                
+                <!-- Header -->
+                <div class="text-center mb-lg">
+                    <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--primary), var(--primary-dark)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 32px; margin: 0 auto; box-shadow: 0 8px 24px rgba(34, 197, 94, 0.3);">🌱</div>
+                    <h2 class="mt-md">Willkommen bei GrünLeben</h2>
+                    <p class="text-sm text-gray">Dein persönlicher Nachhaltigkeits-Assistent</p>
+                </div>
+                
+                <!-- Chat Container -->
+                <div class="chat-container">
+                    
+                    <!-- Bot Message 1 -->
+                    <div>
+                        <div class="bot-avatar">
+                            <div class="bot-avatar-icon">🌱</div>
+                            <span class="bot-avatar-name">Grüni</span>
+                        </div>
+                        <div class="chat-bubble bot">
+                            Hallo! 👋 Ich bin <strong>Grüni</strong>, dein persönlicher Nachhaltigkeits-Begleiter. Ich helfe dir dabei, umweltbewusster zu leben!
+                        </div>
+                    </div>
+                    
+                    <!-- Bot Message 2 -->
+                    <div class="chat-bubble bot">
+                        Wusstest du, dass jeder Deutsche im Durchschnitt <strong>10,8 Tonnen CO₂</strong> pro Jahr verursacht? 🌍
+                    </div>
+                    
+                    <!-- Info Card -->
+                    <div class="info-card">
+                        <h4>💡 Was ist CO₂?</h4>
+                        <p>CO₂ (Kohlendioxid) ist ein Treibhausgas, das bei der Verbrennung fossiler Brennstoffe entsteht. Es trägt maßgeblich zum Klimawandel bei und beeinflusst unser Klima nachhaltig.</p>
+                    </div>
+                    
+                    <!-- Bot Message 3 -->
+                    <div class="chat-bubble bot">
+                        Gemeinsam können wir das ändern! Mit kleinen Schritten im Alltag kannst du einen großen Unterschied machen. 💪
+                    </div>
+                    
+                    <!-- Bot Message 4 - Goals -->
+                    <div class="chat-bubble bot">
+                        <strong>Unsere Ziele zusammen:</strong><br><br>
+                        🎯 Deinen CO₂-Fußabdruck tracken<br>
+                        🌱 Nachhaltige Alternativen finden<br>
+                        🏆 Challenges meistern & Badges sammeln<br>
+                        👥 Teil einer grünen Community werden<br>
+                        💧 Wasser & Energie bewusst nutzen<br>
+                        ♻️ Reparieren statt wegwerfen
+                    </div>
+                    
+                    <!-- Bot Message 5 -->
+                    <div>
+                        <div class="chat-bubble bot">
+                            Bist du bereit, gemeinsam die Welt ein bisschen grüner zu machen? 🌿
+                        </div>
+                        
+                        <!-- Quick Replies -->
+                        <div class="quick-replies">
+                            <a href="onboarding-profil.html" class="quick-reply">Ja, los geht's! 🚀</a>
+                            <a href="#mehr" class="quick-reply">Erzähl mir mehr 💬</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- Skip Option -->
+                <div class="text-center mt-lg" style="padding-bottom: 40px;">
+                    <a href="onboarding-profil.html" class="text-sm text-gray" style="text-decoration: none;">
+                        Einführung überspringen →
+                    </a>
+                    
+                    <div class="progress-dots mt-lg">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

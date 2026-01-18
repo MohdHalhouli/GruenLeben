@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrünLeben - Profil erstellen</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .avatar-selector {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .avatar-option {
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            border: 3px solid var(--gray-200);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            cursor: pointer;
+            background: var(--gray-100);
+        }
+        .avatar-option.selected {
+            border-color: var(--primary);
+            background: var(--primary-bg);
+            box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.2);
+        }
+        .restriction-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 14px;
+            background: var(--gray-100);
+            border: 2px solid transparent;
+            border-radius: 20px;
+            font-size: 13px;
+            cursor: pointer;
+            margin: 4px;
+        }
+        .restriction-chip.selected {
+            background: var(--primary-bg);
+            border-color: var(--primary);
+            color: var(--primary-dark);
+        }
+        .restriction-chip .chip-icon {
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="phone-frame">
+        <div class="screen">
+            <div class="status-bar light">
+                <span>9:41</span>
+                <div class="status-icons">
+                    <span>📶</span>
+                    <span>🔋</span>
+                </div>
+            </div>
+            
+            <div class="screen-content" style="padding-top: 60px;">
+                
+                <!-- Back Button -->
+                <a href="onboarding-intro.html" style="position: absolute; top: 50px; left: 24px; font-size: 24px; text-decoration: none;">
+                    ←
+                </a>
+                
+                <!-- Header -->
+                <div class="text-center mb-lg">
+                    <h2>Erstelle dein Profil</h2>
+                    <p class="text-sm text-gray">Erzähl uns ein bisschen über dich</p>
+                </div>
+                
+                <!-- Avatar Selection -->
+                <div class="form-group">
+                    <label class="form-label text-center" style="display: block;">Wähle deinen Avatar</label>
+                    <div class="avatar-selector">
+                        <div class="avatar-option">🧑</div>
+                        <div class="avatar-option selected">👩</div>
+                        <div class="avatar-option">👨</div>
+                        <div class="avatar-option">🧑‍🦱</div>
+                        <div class="avatar-option">👩‍🦰</div>
+                        <div class="avatar-option">🌱</div>
+                    </div>
+                </div>
+                
+                <!-- Name Input -->
+                <div class="form-group">
+                    <label class="form-label">Dein Name</label>
+                    <input type="text" class="form-input" placeholder="Wie sollen wir dich nennen?" value="Marie">
+                </div>
+                
+                <!-- Location -->
+                <div class="form-group">
+                    <label class="form-label">Dein Standort</label>
+                    <div style="position: relative;">
+                        <input type="text" class="form-input" placeholder="Stadt oder PLZ eingeben" value="Berlin-Kreuzberg" style="padding-left: 40px;">
+                        <span style="position: absolute; left: 12px; top: 50%; transform: translateY(-50%); font-size: 18px;">📍</span>
+                    </div>
+                    <p class="text-xs text-gray mt-sm">Für lokale Empfehlungen und Services</p>
+                </div>
+                
+                <!-- Mobility Restrictions -->
+                <div class="form-group">
+                    <label class="form-label">Mobilitätseinschränkungen</label>
+                    <p class="text-xs text-gray mb-sm">Wähle aus, falls zutreffend (optional)</p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 2px;">
+                        <span class="restriction-chip">
+                            <span class="chip-icon">♿</span>
+                            Rollstuhl
+                        </span>
+                        <span class="restriction-chip">
+                            <span class="chip-icon">🦯</span>
+                            Sehbehinderung
+                        </span>
+                        <span class="restriction-chip">
+                            <span class="chip-icon">🦻</span>
+                            Hörbehinderung
+                        </span>
+                        <span class="restriction-chip">
+                            <span class="chip-icon">🦵</span>
+                            Gehbehinderung
+                        </span>
+                        <span class="restriction-chip selected">
+                            <span class="chip-icon">✓</span>
+                            Keine
+                        </span>
+                    </div>
+                </div>
+                
+                <!-- Dietary Restrictions -->
+                <div class="form-group">
+                    <label class="form-label">Ernährungseinschränkungen</label>
+                    <p class="text-xs text-gray mb-sm">Für passende Rezeptvorschläge (optional)</p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 2px;">
+                        <span class="restriction-chip selected">
+                            <span class="chip-icon">🥜</span>
+                            Nussallergie
+                        </span>
+                        <span class="restriction-chip">
+                            <span class="chip-icon">🌾</span>
+                            Glutenfrei
+                        </span>
+                        <span class="restriction-chip">
+                            <span class="chip-icon">🥛</span>
+                            Laktosefrei
+                        </span>
+                        <span class="restriction-chip">
+                            <span class="chip-icon">🌱</span>
+                            Vegan
+                        </span>
+                        <span class="restriction-chip">
+                            <span class="chip-icon">🥚</span>
+                            Vegetarisch
+                        </span>
+                        <span class="restriction-chip">
+                            <span class="chip-icon">🐟</span>
+                            Pescetarisch
+                        </span>
+                    </div>
+                </div>
+                
+                <!-- Privacy Note -->
+                <div class="card card-sm" style="background: var(--gray-100);">
+                    <div class="flex items-center gap-sm">
+                        <span>🔒</span>
+                        <p class="text-xs text-gray">Deine Daten werden nur lokal gespeichert und nie an Dritte weitergegeben.</p>
+                    </div>
+                </div>
+                
+                <!-- Actions -->
+                <div style="margin-top: 24px; padding-bottom: 40px;">
+                    <a href="onboarding-gps.html" class="btn btn-primary">
+                        Weiter
+                    </a>
+                    
+                    <div class="progress-dots mt-lg">
+                        <span class="dot"></span>
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
