@@ -30,7 +30,7 @@ GrünLeben ist ein Frontend-Prototyp einer Nachhaltigkeits-App, die Nutzer dabei
 
 ---
 
-**Contributors:** An der Konzeption und Ausarbeitung der App-Features waren folgende Personen beteiligt:
+**Contributors:** An der Konzeption der App-Features waren folgende Personen beteiligt:
 
 - Angelika Köpplin
 - Jennifer Ziep
