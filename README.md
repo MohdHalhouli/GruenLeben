@@ -21,7 +21,7 @@ GrünLeben ist ein Frontend-Prototyp einer Nachhaltigkeits-App, die Nutzer dabei
    - Alternativ: Ziehe die Datei in ein Browserfenster.
 
 4. **Navigation**
-   - Die Startseite zeigt eine Übersicht aller Screens. Klicke auf die Vorschaubilder, um die einzelnen App-Seiten zu öffnen, wo Sie dort dann einfach zwischen den App-Seiten navigieren können.
+   - Die Startseite zeigt eine Übersicht aller Screens. Klicke auf die Vorschaubilder, um die einzelnen App-Seiten zu öffnen, wo du dort dann einfach zwischen den App-Seiten navigieren kannst.
 
 ### Hinweise
 - Es ist keine Installation oder Build notwendig.
