@@ -11,7 +11,7 @@ GrünLeben ist ein Frontend-Prototyp einer Nachhaltigkeits-App, die Nutzer dabei
 ## Vorschau/Anzeigen des Prototyps
 
 1. **Repository klonen oder entpacken**
-   - Lade das Repository herunter oder klone es auf deinen Rechner.
+   - Lade das Repository herunter und entpacke die ZIP-Datei oder klone es auf deinen Rechner.
 
 2. **Öffne den Projektordner**
    - Öffne den Ordner `GruenLeben` in deinem Dateimanager oder Editor.
