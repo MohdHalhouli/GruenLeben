@@ -28,13 +28,21 @@
                 
                 <!-- Profile Section -->
                 <div class="profile-section">
-                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop" 
-                         alt="Profilbild" class="profile-avatar">
+                    <span id="profile-avatar" class="profile-avatar" style="display:inline-block;width:90px;height:90px;border-radius:50%;background:#F0FDF4;font-size:60px;line-height:90px;text-align:center;object-fit:cover;">👩</span>
                     <div class="profile-info">
-                        <h3>Marie Schmidt</h3>
+                        <h3 id="profile-name">Marie Schmidt</h3>
                         <p class="text-primary">Level 5 • 🌱 Öko-Starter</p>
                         <p class="text-sm text-gray">Mitglied seit Januar 2026</p>
                     </div>
+                        <script>
+                            // Name und Avatar aus LocalStorage laden
+                            document.addEventListener('DOMContentLoaded', function() {
+                                const name = localStorage.getItem('userName') || 'Marie Schmidt';
+                                const avatar = localStorage.getItem('userAvatar') || '👩';
+                                document.getElementById('profile-name').textContent = name;
+                                document.getElementById('profile-avatar').textContent = avatar;
+                            });
+                        </script>
                 </div>
                 
                 <!-- Stats Summary -->

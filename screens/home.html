@@ -25,13 +25,20 @@
                 <div class="header">
                     <div>
                         <p class="text-sm text-gray">Guten Morgen 👋</p>
-                        <h2>Marie</h2>
+                        <h2 id="user-name">Marie</h2>
                     </div>
                     <a href="einstellungen.html" class="header-action">
-                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop" 
-                             alt="Profilbild" 
-                             style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover;">
+                        <span id="user-avatar" style="display:inline-block;width:40px;height:40px;border-radius:50%;background:#F0FDF4;font-size:30px;line-height:40px;text-align:center;object-fit:cover;">👩</span>
                     </a>
+                        <script>
+                            // Name und Avatar aus LocalStorage laden
+                            document.addEventListener('DOMContentLoaded', function() {
+                                const name = localStorage.getItem('userName') || 'Marie';
+                                const avatar = localStorage.getItem('userAvatar') || '👩';
+                                document.getElementById('user-name').textContent = name;
+                                document.getElementById('user-avatar').textContent = avatar;
+                            });
+                        </script>
                 </div>
                 
                 <!-- Progress Ring Section -->
