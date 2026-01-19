@@ -56,19 +56,19 @@
             
             <div style="display: flex; justify-content: center; margin-top: 32px;">
                 <div class="flow-diagram">
-                    <a href="screens/scanner.html" class="flow-item">
-                        <span class="flow-icon">📷</span>
-                        <span class="flow-label">Scanner</span>
-                    </a>
-                    <span class="flow-arrow">↔</span>
                     <a href="screens/home.html" class="flow-item" style="background: var(--primary-bg);">
                         <span class="flow-icon">🏠</span>
                         <span class="flow-label">Home</span>
                     </a>
                     <span class="flow-arrow">↔</span>
-                    <a href="screens/locations.html" class="flow-item">
-                        <span class="flow-icon">📍</span>
-                        <span class="flow-label">Orte</span>
+                    <a href="screens/reparatur.html" class="flow-item">
+                        <span class="flow-icon">🟩</span>
+                        <span class="flow-label">Green Box</span>
+                    </a>
+                    <span class="flow-arrow">↔</span>
+                    <a href="screens/scanner.html" class="flow-item">
+                        <span class="flow-icon">📷</span>
+                        <span class="flow-label">Scan</span>
                     </a>
                     <span class="flow-arrow">↔</span>
                     <a href="screens/community.html" class="flow-item">
@@ -152,9 +152,9 @@
 
         <!-- Main Screens Section -->
         <section class="gallery-section">
-            <h2>🏠 Hauptbildschirme</h2>
+            <h2>🛒 Nachhaltiges Einkaufen </h2>
             <div class="gallery-grid">
-                <a href="screens/home.html" class="gallery-item">
+                <!-- <a href="screens/home.html" class="gallery-item">
                     <div class="gallery-preview" style="background: linear-gradient(135deg, #F0FDF4, #DCFCE7);">
                         <span>📊</span>
                     </div>
@@ -162,7 +162,7 @@
                         <h3>Home Dashboard</h3>
                         <p>Fortschrittsanzeige und personalisierte Challenges</p>
                     </div>
-                </a>
+                </a> -->
                 
                 <a href="screens/scanner.html" class="gallery-item">
                     <div class="gallery-preview" style="background: linear-gradient(135deg, #1F2937, #374151);">
@@ -188,7 +188,7 @@
 
         <!-- Community Section -->
         <section class="gallery-section">
-            <h2>👥 Gemeinschaft</h2>
+            <h2>👥 Gemeinschaft </h2>
             <div class="gallery-grid">
                 <a href="screens/community.html" class="gallery-item">
                     <div class="gallery-preview" style="background: linear-gradient(135deg, #EDE9FE, #DDD6FE);">
@@ -222,20 +222,19 @@
             </div>
         </section>
 
-        <!-- Services Section -->
+        <!-- Green Box Section -->
         <section class="gallery-section">
-            <h2>🛠️ Services & Marktplatz</h2>
+            <h2>🟩 Green Box - Green Tools</h2>
             <div class="gallery-grid">
-                <a href="screens/reparatur.html" class="gallery-item">
+                <a href="screens/reparatur-services.html" class="gallery-item">
                     <div class="gallery-preview" style="background: linear-gradient(135deg, #DBEAFE, #BFDBFE);">
                         <span>🔧</span>
                     </div>
                     <div class="gallery-info">
-                        <h3>Reparaturdienste</h3>
+                        <h3>Reparatur-Services</h3>
                         <p>Lokale Werkstätten und Reparatur-Cafés</p>
                     </div>
                 </a>
-                
                 <a href="screens/tauschboerse.html" class="gallery-item">
                     <div class="gallery-preview" style="background: linear-gradient(135deg, #FCE7F3, #FBCFE8);">
                         <span>♻️</span>
@@ -245,14 +244,22 @@
                         <p>Secondhand-Marktplatz in der Nachbarschaft</p>
                     </div>
                 </a>
-                
                 <a href="screens/mobilitaet.html" class="gallery-item">
                     <div class="gallery-preview" style="background: linear-gradient(135deg, #CCFBF1, #99F6E4);">
-                        <span>🚌</span>
+                        <span>🚲</span>
                     </div>
                     <div class="gallery-info">
                         <h3>Mobilität</h3>
                         <p>ÖPNV-Anbindung und CO2-Vergleich</p>
+                    </div>
+                </a>
+                <a href="screens/locations.html" class="gallery-item">
+                    <div class="gallery-preview" style="background: linear-gradient(135deg, #DCFCE7, #BBF7D0);">
+                        <span>📍</span>
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Locations</h3>
+                        <p>Nachhaltige Orte in deiner Nähe</p>
                     </div>
                 </a>
             </div>
@@ -283,7 +290,7 @@
                     <p class="text-sm mt-sm">Tägliche, wöchentliche und monatliche CO2-Einsparungen visualisiert</p>
                 </div>
                 <div class="card" style="background: var(--primary-bg);">
-                    <h4>� Badges & Erfolge</h4>
+                    <h4>🏅 Badges & Erfolge</h4>
                     <p class="text-sm mt-sm">Sammle Auszeichnungen für deine nachhaltigen Aktivitäten</p>
                 </div>
                 <div class="card" style="background: var(--primary-bg);">
@@ -305,6 +312,10 @@
                 <div class="card" style="background: var(--primary-bg);">
                     <h4>🔧 Reparatur-Services</h4>
                     <p class="text-sm mt-sm">Finde lokale Reparatur-Cafés und Werkstätten</p>
+                </div>
+                <div class="card" style="background: var(--primary-bg);">
+                    <h4>♻️ Tauschbörse</h4>
+                    <p class="text-sm mt-sm">Secondhand-Marktplatz für nachhaltigen Konsum in deiner Nachbarschaft</p>
                 </div>
                 <div class="card" style="background: var(--primary-bg);">
                     <h4>🚌 Mobilitätsvorschläge</h4>
